@@ -1,0 +1,33 @@
+	body
+{
+    
+    background-image:url("../img/image1.jpeg");
+     background-size: 100% 670px;
+     background-repeat: no-repeat;
+
+}
+.home{
+
+background-color: rgba(30, 74, 67, 0.7);
+margin-top:100px;
+   
+}
+input[type="text"],input[type="password"] {
+   height: 40px;
+   width: 200px;
+   font-size: 15px;
+   border: none;
+   margin-bottom: 15px;
+   border-radius: 4px;
+   background-color: white;
+   padding-left: 35px;
+
+
+}
+.gen{
+	color:blue;
+
+}
+
+
+

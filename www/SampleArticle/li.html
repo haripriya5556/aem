@@ -1,0 +1,65 @@
+<!--<html>
+<head>
+</head>
+<body>
+<textarea id="alltext"></textarea>
+
+<ol >
+<li>Hello</li>
+<li>World</li>
+<li>Earthlings</li>
+</ol>
+<button onclick="addText(event)">click</button>
+
+<script>
+function addText(event) {
+    var targ = event.target || event.srcElement;
+    document.getElementById("alltext").value += targ.textContent || targ.innerText;
+}
+</script>
+
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+        $("button").click(function(){
+            $("#selections").append('<li><iframe src="https://www.youtube.com/embed/3JNLwlcPBPI" frameborder="0" allowfullscreen width="200" height="100" class="remove" name="x"></iframe></li>'); 
+        });
+        $(document).on("click", "li.remove" , function() {
+            $(this).parent().remove();
+        });
+    });
+</script>
+</head>
+<body>
+    <button>Add new list item</button>
+    <p>Click the above button to dynamically add new list items. You can remove it later.</p>
+    <div class="row">
+  <div class="col-md-4">
+    <a href="#">
+   <ul id="selections" style="list-style:none">
+
+     <li> <iframe src="https://www.youtube.com/embed/3JNLwlcPBPI" frameborder="0" allowfullscreen width="200" height="100""></iframe></li></ul>
+</a><br></div>
+<div class="col-md-4">
+<a href="#">
+<ul  style="list-style:none">
+     <li> <iframe src="https://www.youtube.com/embed/wZdpNglLbt8" frameborder="0" allowfullscreen width="200" height="100""></iframe></li>
+</a></div>
+</div>
+<div class="col-md-4">
+
+</div>
+</video>
+    </a>
+  </div>
+ 
+</div><br>
+</body> 
+</html>   
